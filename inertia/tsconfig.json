@@ -1,0 +1,14 @@
+{
+  "extends": "@adonisjs/tsconfig/tsconfig.client.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "module": "ESNext",
+    "types": ["svelte"],
+    "paths": {
+      "~/*": ["../*"],
+      "@/*": ["./lib/*"]
+    },
+    "verbatimModuleSyntax": true
+  },
+  "include": ["./**/*.ts", "./**/*.svelte", "../inertiajs-svelte.d.ts"]
+}
